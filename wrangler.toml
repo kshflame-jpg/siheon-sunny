@@ -1,0 +1,12 @@
+# 시헌과 써니의 대탐험 서버 설정 (이 파일과 worker.js 두 개만 있으면 돼요)
+name = "siheon-sunny"
+main = "worker.js"
+compatibility_date = "2025-04-01"
+
+[[durable_objects.bindings]]
+name = "ISLAND"
+class_name = "Island"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Island"]
